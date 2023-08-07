@@ -1,0 +1,26 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: downloading {{ tea_url }} to {{ tea_install_exe }}
+  become: true
+  become_user: root
+  get_url:
+    url: '{{ tea_url }}'
+    dest: '{{ tea_install_exe }}'
+    mode: 0755
+    checksum: '{{ tea_checksum }}'
+- name: linking {{ tea_link }} to {{ tea_install_exe }}
+  become: true
+  become_user: root
+  file:
+    src: '{{ tea_install_exe }}'
+    dest: '{{ tea_link }}'
+    state: link

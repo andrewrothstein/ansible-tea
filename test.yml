@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+  tasks:
+    - command: tea --version
+      register: tea_test_output
+    - name: tea --version
+      debug:
+        msg: '{{ tea_test_output.stdout }}'

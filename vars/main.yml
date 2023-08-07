@@ -1,0 +1,10 @@
+---
+# vars file for tea
+tea_os: '{{ ansible_system | lower }}'
+tea_arch: '{{ tea_arch_map[ansible_architecture] }}'
+tea_platform: '{{ tea_os }}-{{ tea_arch }}'
+tea_exe: tea-{{ tea_ver }}-{{ tea_platform }}{{ tea_dotexe | default("") }}
+tea_url: '{{ tea_mirror }}/v{{ tea_ver }}/{{ tea_exe }}'
+tea_checksum: '{{ tea_checksums[tea_ver][tea_platform] }}'
+tea_install_exe: '{{ tea_install_dir }}/{{ tea_exe }}'
+tea_link: '{{ tea_install_dir }}/tea'
