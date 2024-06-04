@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.tea
+  hosts: all
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: tea --version
+    - name: Executing 'tea --version'
+      ansible.builtin.command: tea --version
+      changed_when: false
       register: tea_test_output
-    - name: tea --version
-      debug:
+    - name: Output of 'tea --version'
+      ansible.builtin.debug:
         msg: '{{ tea_test_output.stdout }}'
