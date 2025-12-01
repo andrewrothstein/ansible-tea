@@ -1,6 +1,6 @@
 ---
 # defaults file for tea
-tea_ver: 0.9.2
+tea_ver: 0.11.1
 tea_install_dir: /usr/local/bin
 tea_arch_map:
   aarch64: arm64
@@ -27,3 +27,54 @@ tea_checksums:
     windows-386: sha256:89555c73716414cb8674bbdcffe62151a02998b80bf1a54aac68112551af4707
     # https://gitea.com/gitea/tea/releases/download/v0.9.2/tea-0.9.2-windows-amd64.exe.sha256
     windows-amd64: sha256:7dbbf98468bc829d26d887058f41ea4505cfdf9c7bffaa6495aaa30b6fe866b1
+  '0.10.1':
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-darwin-amd64
+    darwin-amd64: sha256:2e701c78e57256254a830e312b42f45efd08e57c5136ac8f49ff675c56fbc1d3
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-darwin-arm64
+    darwin-arm64: sha256:48cc313040ca9a16cbbcb9f5651d4c99b8eeb593e4d0ff5001fbcd282beb4a4d
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-linux-amd64
+    linux-amd64: sha256:2d19aa860aa5f97b31f6d880f0b44455874197dc12bc3d48e0ccb2cac8f16469
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-linux-arm-5
+    linux-arm-5: sha256:1c3a6cfb894feddb0b1ba3c07174c88d87dffd124d05efe84fd68132d0386d7c
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-linux-arm-6
+    linux-arm-6: sha256:75da81091467677349ab1527c515d2efb7a807d9509cb97829f7923769f06908
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-linux-arm-7
+    linux-arm-7: sha256:5bed4af667a6f1317f57aa84261464f3373daf69304ec622ae64aca5de673f1b
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-linux-arm64
+    linux-arm64: sha256:d162dc4bbeb8a7869963fdc118243d9689ffc8a9d6b28bdf025966bf1c1e9d93
+    # https://gitea.com/gitea/tea/releases/download/v0.10.1/tea-0.10.1-windows-amd64.exe
+    windows-amd64: sha256:7c9777edb8916ba3c894f6a81672fbca54e85ada6701c895ca356c7f28eeb39e
+  '0.11.0':
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-darwin-amd64
+    darwin-amd64: sha256:daa32751dff3700dc73ec471662e033a29c35e7cce1b54bf41a200fa51d17d34
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-darwin-arm64
+    darwin-arm64: sha256:c6b2c3915d25f1a91675e2c29a85abbe45b5394c0544481f4f89c2b8285ada5a
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-linux-amd64
+    linux-amd64: sha256:1417495a8aa8a5d5c7f03f4505030708449b9b833a518cd9e21a3192646162f6
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-linux-arm-5
+    linux-arm-5: sha256:c0a176021d728da9f220b10e6c0f2dcad80354c7e53d89d462f2629571c1a499
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-linux-arm-6
+    linux-arm-6: sha256:5718a44d9d457fc1819b629fbdeada68054f7957b154b39b724a435eb106a334
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-linux-arm-7
+    linux-arm-7: sha256:9319ecfcfa14e7f1887369e52406b19b4487ea31ea194d3ead7053ac8435137a
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-linux-arm64
+    linux-arm64: sha256:dea6d42ddfcbbacfe2bd81ddf568d0af9130b179fbb53a380ea6e73104066c9d
+    # https://gitea.com/gitea/tea/releases/download/v0.11.0/tea-0.11.0-windows-amd64.exe
+    windows-amd64: sha256:7ac1e70c1ec86e86c3e4ca4df6de738c95e56e570577a3794533488836f5b6d1
+  '0.11.1':
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-darwin-amd64
+    darwin-amd64: sha256:3ce9cd60d734688d81b704b5093e6753f055323c2627a257665ef38736b47e73
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-darwin-arm64
+    darwin-arm64: sha256:1494fc312ecfc9c3ce50e340b155aa1830dee26d4c967599bf7ecd870cc38f5e
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-linux-amd64
+    linux-amd64: sha256:254b50cee2635715aa3bb4e121e6f722f318fcc0ae860c80ca3269049027d3fb
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-linux-arm-5
+    linux-arm-5: sha256:f8723b3d8d5ba594553392862f094e2daf395b68d23095240135873b2bfe1bc1
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-linux-arm-6
+    linux-arm-6: sha256:d2b3864a36769725403ef1b35c2ccd1c2818e7398f64efd7caa5a9465265fd4c
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-linux-arm-7
+    linux-arm-7: sha256:9c2235eac8dc5bcd5196cf527f96ebd832299c7e410416806c31ef84720f7ff5
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-linux-arm64
+    linux-arm64: sha256:1c9c90cabdff544193c7dc0c7137adfaf4927f8aff90758e6f2ddc5502de9d21
+    # https://gitea.com/gitea/tea/releases/download/v0.11.1/tea-0.11.1-windows-amd64.exe
+    windows-amd64: sha256:fddd82b1e1bc41e4844bc1a0455be6f7b22e51536209243e26f16929332d225d
